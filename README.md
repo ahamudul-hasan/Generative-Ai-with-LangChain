@@ -1,4 +1,4 @@
-# 🦜🔗 LangChain — Complete Guide
+# LangChain — Complete Guide 🦜🔗
 
 > **LangChain** is a framework for building applications powered by **Large Language Models (LLMs)**.
 
