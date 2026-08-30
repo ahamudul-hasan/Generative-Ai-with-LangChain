@@ -26,9 +26,7 @@ Instead of only sending a question to an LLM and receiving an answer, LangChain 
   - [5. Indexes](#5-indexes)
   - [6. Agents](#6-agents)
 - [How Everything Connects](#-how-everything-connects)
-- [Complete Example](#-complete-example)
 - [When Should You Use LangChain?](#-when-should-you-use-langchain)
-- [Learning Path](#-recommended-learning-path)
 
 ---
 
