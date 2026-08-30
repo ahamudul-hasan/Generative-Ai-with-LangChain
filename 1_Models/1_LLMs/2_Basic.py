@@ -1,10 +1,12 @@
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_google_genai import GoogleGenerativeAI
 from dotenv import load_dotenv
 
 load_dotenv()
 
-llm = ChatGoogleGenerativeAI(model="gemini-3.1-flash-lite")
+llm = GoogleGenerativeAI(model="gemini-3.1-flash-lite")
 
-result = llm.invoke("Who beat thanos?")
+result1 = llm.invoke("What is the capital of Bangladesh")
+result2 = llm.invoke("Who beat thanos?")
 
-print(result.content)
+print(result1)
+print(result2)
