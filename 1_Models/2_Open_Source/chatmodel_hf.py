@@ -1,9 +1,17 @@
 from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 from dotenv import load_dotenv
+import os
 
 load_dotenv()
 
 llm = HuggingFaceEndpoint(
-    repo_id="TinyLlama/TinyLlama_v1.1",
-    task="text-generation"
+    repo_id="deepseek-ai/DeepSeek-V4-Flash-0731",
+    task="text-generation",
+    huggingfacehub_api_token=os.getenv("HUGGINGFACEHUB_ACCESS_TOKEN")
 )
+
+model = ChatHuggingFace(llm=llm)
+
+result = model.invoke("Whats the capital of Bangladesh")
+
+print(result.content)
