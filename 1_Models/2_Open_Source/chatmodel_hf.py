@@ -12,6 +12,6 @@ llm = HuggingFaceEndpoint(
 
 model = ChatHuggingFace(llm=llm)
 
-result = model.invoke("Whats the capital of Bangladesh")
+result = model.invoke("Tell me about NVIDIA")
 
 print(result.content)
