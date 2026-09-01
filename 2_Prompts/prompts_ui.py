@@ -1,14 +1,18 @@
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_huggingface import ChatHuggingFace, HuggingFaceEndpoint
 from dotenv import load_dotenv
 import streamlit as st
 from langchain_core.prompts import PromptTemplate, load_prompt
+import os
 
 load_dotenv()
 
-model = ChatGoogleGenerativeAI(
-    model='gemini-2.5-flash',
-    max_output_tokens=1024,
+llm = HuggingFaceEndpoint(
+    repo_id="deepseek-ai/DeepSeek-V4-Flash-0731",
+    task="text-generation",
+    huggingfacehub_api_token=os.getenv("HUGGINGFACEHUB_ACCESS_TOKEN")
 )
+
+model = ChatHuggingFace(llm=llm)
 
 st.header('Research Tool')
 
