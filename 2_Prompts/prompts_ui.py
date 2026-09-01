@@ -6,8 +6,8 @@ from langchain_core.prompts import PromptTemplate
 load_dotenv()
 
 model = ChatGoogleGenerativeAI(
-    model='gemini-3.6-flash',
-    max_output_tokens=256,
+    model='gemini-2.5-flash',
+    max_output_tokens=1024,
 )
 
 st.header('Research Tool')
@@ -40,5 +40,6 @@ prompt = template.invoke({
 })
 
 if st.button('Summarize'):
-    result = model.invoke(prompt)
-    st.write(result.content)
+    with st.spinner("Generating summary..."):
+        result = model.invoke(prompt)
+        st.write(result.content)
