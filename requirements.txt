@@ -30,4 +30,4 @@ scikit-learn
 streamlit
 
 # Data Validation and Structured Output
-pydantic
+pydantic[email]
