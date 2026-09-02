@@ -28,3 +28,6 @@ scikit-learn
 
 # Streamlit UI
 streamlit
+
+# Data Validation and Structured Output
+pydantic
