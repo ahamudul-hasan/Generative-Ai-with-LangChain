@@ -2,13 +2,7 @@
 langchain
 langchain-core
 langchain-classic
-
-# OpenAI Integration
-langchain-openai
-openai
-
-# Anthropic Integration
-langchain-anthropic
+grandalf
 
 # Google Gemini (PaLM) Integration
 langchain-google-genai
