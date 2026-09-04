@@ -17,7 +17,7 @@ prompt2 = PromptTemplate(
 )
 
 llm = HuggingFaceEndpoint(
-    repo_id="zai-org/GLM-5.3",
+    repo_id="openai-community/gpt2",
     task="text-generation",
     huggingfacehub_api_token=os.getenv("HUGGINGFACEHUB_ACCESS_TOKEN")
 )
@@ -31,5 +31,3 @@ chain = prompt1 | model | parser | prompt2 | model | parser
 result = chain.invoke({'topic': 'Unemployment in Bangladesh'})
 
 print(result)
-
-chain.get_graph().print_ascii()
