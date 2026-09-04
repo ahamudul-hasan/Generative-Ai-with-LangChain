@@ -31,3 +31,5 @@ chain = prompt1 | model | parser | prompt2 | model | parser
 result = chain.invoke({'topic': 'Unemployment in Bangladesh'})
 
 print(result)
+
+chain.get_graph().print_ascii()
