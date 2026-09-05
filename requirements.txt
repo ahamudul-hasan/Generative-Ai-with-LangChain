@@ -26,3 +26,5 @@ streamlit
 
 # Data Validation and Structured Output
 pydantic[email]
+
+ipykernel
