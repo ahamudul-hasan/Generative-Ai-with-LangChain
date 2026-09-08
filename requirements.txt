@@ -2,6 +2,7 @@
 langchain
 langchain-core
 langchain-classic
+langchain-community
 grandalf
 
 # Google Gemini (PaLM) Integration
