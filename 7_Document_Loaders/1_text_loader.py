@@ -11,7 +11,7 @@ model = ChatGoogleGenerativeAI(
     temperature=1.5
 )
 
-loader = TextLoader('football.txt', encoding='utf-8')
+loader = TextLoader('Data/football.txt', encoding='utf-8')
 
 docs = loader.load()
 
