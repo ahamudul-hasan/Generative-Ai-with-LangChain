@@ -2,7 +2,8 @@ from langchain_community.document_loaders import PyPDFLoader
 
 loader = PyPDFLoader('Data/Green.pdf')
 
-docs = loader.load()
+docs = loader.lazy_load()
+first_doc = next(docs)
 
-print(docs[0].page_content)
-print(docs[0].metadata)
+print(first_doc.page_content)
+print(first_doc.metadata)
