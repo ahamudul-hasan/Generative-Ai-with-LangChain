@@ -29,4 +29,8 @@ streamlit
 pydantic[email]
 pypdf
 
+# Vector Stores
+langchain-chroma
+chromadb
+
 ipykernel
