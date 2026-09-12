@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🦜🔗 LangChain & Generative AI Master Guide
+# 🦜🔗 LangChain & Generative AI
 
 <p align="center">
   <strong>From Core LLM Foundations to Advanced RAG Pipelines & Autonomous Agents</strong>
