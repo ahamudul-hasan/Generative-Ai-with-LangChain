@@ -32,5 +32,9 @@ pypdf
 # Vector Stores
 langchain-chroma
 chromadb
+faiss-cpu
+
+# Wikipedia Integrations
+wikipedia
 
 ipykernel
