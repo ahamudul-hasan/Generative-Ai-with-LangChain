@@ -37,4 +37,7 @@ faiss-cpu
 # Wikipedia Integrations
 wikipedia
 
+# YouTube Transcript Extraction
+youtube-transcript-api
+
 ipykernel
