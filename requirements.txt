@@ -1,43 +1,25 @@
-# LangChain Core
 langchain
 langchain-core
 langchain-classic
 langchain-community
 grandalf
-
-# Google Gemini (PaLM) Integration
 langchain-google-genai
 google-generativeai
-
-# Hugging Face Integration
 langchain-huggingface
 transformers
 huggingface-hub
 sentence-transformers
-
-# Environment Variable Management
 python-dotenv
-
-# Machine Learning Utilities
 numpy
 scikit-learn
-
-# Streamlit UI
 streamlit
-
-# Data Validation and Structured Output
 pydantic[email]
 pypdf
-
-# Vector Stores
 langchain-chroma
 chromadb
 faiss-cpu
-
-# Wikipedia Integrations
 wikipedia
-
-# YouTube Transcript Extraction
+ddgs
 youtube-transcript-api
-
 ipykernel
+langchain-experimental
